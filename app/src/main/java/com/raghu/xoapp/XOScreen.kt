@@ -373,7 +373,6 @@ fun ResetButton(onReset: () -> Unit) {
 }
 
 fun checkWinner(board: List<String>): String? {
-    // Fixed: Removed duplicate winning position (6,7,8)
     val winningPositions = listOf(
         listOf(0, 1, 2), listOf(3, 4, 5), listOf(6, 7, 8), // Rows
         listOf(0, 3, 6), listOf(1, 4, 7), listOf(2, 5, 8), // Columns
